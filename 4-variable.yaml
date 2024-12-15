@@ -6,6 +6,5 @@
     trainer : siva
   tasks : 
   - name : print the information
-    ansible.buildin.debug:
+    ansible.buildin.debug
       msg : "Hi, I am learning {{course}} with {{duration}} trainer of {{trainer}}"
-      
