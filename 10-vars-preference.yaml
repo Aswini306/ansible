@@ -1,6 +1,10 @@
 
 - name: variables from files
   hosts: web
+  vars:
+    COURSE: "DevOps with AWS from playlevel"
+    DURATION: "120HRS"
+    TRAINER: "Sivakumar Reddy M"
   vars_prompt:
   - name: COURSE
     prompt: Please enter the course name
@@ -11,10 +15,6 @@
   - name: DURATION
     prompt: Please enter the duration
     private: false 
-  vars:
-    COURSE: "DevOps with AWS from playlevel"
-    DURATION: "120HRS"
-    TRAINER: "Sivakumar Reddy M"
   vars_files:
   - vars.yaml
   tasks:
