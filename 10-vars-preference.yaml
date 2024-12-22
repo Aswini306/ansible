@@ -1,0 +1,27 @@
+
+- name: variables from files
+  hosts: web
+  vars_prompt:
+  - name: COURSE
+    prompt: Please enter the course name
+    private: false 
+  - name: TRAINER
+    prompt: Please enter the trainer name
+    private: false 
+  - name: DURATION
+    prompt: Please enter the duration
+    private: false 
+  vars:
+    COURSE: "DevOps with AWS from playlevel"
+    DURATION: "120HRS"
+    TRAINER: "Sivakumar Reddy M"
+  vars_files:
+  - vars.yaml
+  tasks:
+  - name: print the course information
+     vars:
+    COURSE: "DevOps with AWS from tasklevel"
+    DURATION: "120HRS"
+    TRAINER: "Sivakumar Reddy M"
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
