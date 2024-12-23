@@ -1,5 +1,6 @@
 - name: data types mentioned
   host: local
+  connection: localhost
   vars:
     course: devops with aws
     duration: 120hrs
@@ -13,6 +14,9 @@
       ci: jenkins
       cm: ansible
       cloud: aws
+      aws:
+      - iam
+      - s3
   tasks:
   - name: print the information
     ansible.builtin.debug:
