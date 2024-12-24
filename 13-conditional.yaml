@@ -2,11 +2,11 @@
   hosts: web
   become: yes
   tasks:
-    - name: check user exists
-      ansible.builtin.command: id expense
-      register: USER
-      ignore errors: true
+  - name: check user exists
+    ansible.builtin.command: id expense
+    register: USER
+    ignore errors: true
 
-    - name: print the user information
-      ansible.builtin.debug:
-        msg: "user info: {{USER}}"
+  - name: print the user information
+    ansible.builtin.debug:
+      msg: "user info: {{USER}}"
