@@ -1,6 +1,6 @@
 - name: data types mentioned
   host: local
-  connection: localhost
+  connection: local
   vars:
     course: devops with aws
     duration: 120hrs
@@ -20,4 +20,4 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-     msg: "Hi, I am learning {{ course }}, with duration: {{ duration }}, topics are: {{ topics }}, and live: {{ live }}, tools are: {{ tools }}"
+      msg: "Hi, I am learning {{ course }}, with duration: {{ duration }}, topics are: {{ topics }}, and live: {{ live }}, tools are: {{ tools }}"
