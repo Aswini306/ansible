@@ -1,5 +1,5 @@
 - name: course details mentioned
-  host: local
+  hosts: local
   connection: local
   vars:
     course: devops with aws
