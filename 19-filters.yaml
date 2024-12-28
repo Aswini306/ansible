@@ -43,5 +43,5 @@
         violet:lily
         yellow:chrymssum
     ansible.builtin.debug:
-      msg: " {{ map | dict }}"
+      msg: " {{ map | dict2items }}"
 
