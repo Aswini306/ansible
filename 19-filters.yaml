@@ -18,3 +18,21 @@
     ansible.builtin.debug:
       msg: " {{ greeting | lower }}"
 
+  - name: get the unique values
+    vars:
+      numbers: [1,5,3,6,2,1,4,6,77,87,6,5]
+    ansible.builtin.debug:
+      msg: " {{ numbers | unique}}"
+
+   - name: get the min value
+    vars:
+      numbers: [1,5,3,6,2,1,4,6,77,87,6,5]
+    ansible.builtin.debug:
+      msg: " {{ numbers | min}}"
+
+   - name: get the max value
+    vars:
+      numbers: [1,5,3,6,2,1,4,6,77,87,6,5]
+    ansible.builtin.debug:
+      msg: " {{ numbers | max}}"
+
