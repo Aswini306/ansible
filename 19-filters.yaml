@@ -52,5 +52,5 @@
       - {'key': 'violet', 'value': 'lily'}
       - {'key': 'yellow', 'value': 'chrymssum'}
     ansible.builtin.debug:
-      msg: " {{ map | items2dict }}"
+      msg: " {{ dict | items2dict }}"
 
