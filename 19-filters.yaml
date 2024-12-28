@@ -36,3 +36,12 @@
     ansible.builtin.debug:
       msg: " {{ numbers | max}}"
 
+   - name: conver map to dictionary
+    vars:
+      map: 
+        red:rose
+        violet:lily
+        yellow:chrymssum
+    ansible.builtin.debug:
+      msg: " {{ map | dict }}"
+
