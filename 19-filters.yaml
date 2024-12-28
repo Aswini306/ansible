@@ -36,7 +36,7 @@
     ansible.builtin.debug:
       msg: " {{ numbers | max}}"
 
-   - name: conver map to dictionary
+  - name: conver map to dictionary
     vars:
       map: 
         red:rose
