@@ -36,7 +36,7 @@
     ansible.builtin.debug:
       msg: " {{ numbers | max}}"
 
-  - name: conver map to dictionary
+  - name: convert map to dictionary
     vars:
       map: 
         red: "rose"
@@ -44,4 +44,13 @@
         yellow: "chrymssum"
     ansible.builtin.debug:
       msg: " {{ map | dict2items }}"
+
+   - name: convert dictionary to map
+    vars:
+      dict:
+      - {'key': 'red', 'value': 'rose'} 
+      - {'key': 'violet', 'value': 'lily'}
+      - {'key': 'yellow', 'value': 'chrymssum'}
+    ansible.builtin.debug:
+      msg: " {{ map | item2dict }}"
 
