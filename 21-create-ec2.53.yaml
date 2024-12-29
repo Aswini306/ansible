@@ -9,7 +9,7 @@
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
-    name: "{{ item }}"
+      name: "{{ item }}"
       vpc_subnet_id: vpc-047f147b1259598b7
       instance_type: t3.micro
       security_group: sg-0955b10d8c147a4cb
