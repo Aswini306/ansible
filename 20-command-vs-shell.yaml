@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   vars:
-    - name: execute the command
-      ansible.builtin.command: ls -ltr > /tmp/output.txt
-      
+  - name: execute the command
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
+
