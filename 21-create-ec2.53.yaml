@@ -15,4 +15,4 @@
       security_group: sg-0955b10d8c147a4cb
       image_id: ami-09c813fb71547fc4f
     loop: "{{ instances }}"
-    register: ec2-instances
+    register: ec2_instances
