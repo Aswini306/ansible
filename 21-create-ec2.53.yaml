@@ -38,7 +38,7 @@
     amazon.aws.route53:
       state: present
       zone: "aswini.blog"
-      record: "{{ item.item }}.aswini.blog"
+      record: "aswini.blog"
       type: A
       ttl: 1
       value: "{{ item.instances[0].public_ip_address}}"
