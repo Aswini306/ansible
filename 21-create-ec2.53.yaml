@@ -16,5 +16,6 @@
       image_id: "ami-09c813fb71547fc4f"
     loop: "{{ instances }}"
     register: ec2_instances
+    
 
    
