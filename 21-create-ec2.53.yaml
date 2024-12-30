@@ -34,7 +34,7 @@
      
     loop: "{{ ec2_instances.results }}"
 
-   - name: create r53 public records
+  - name: create r53 public records
     amazon.aws.route53:
       state: present
       zone: "aswini.blog"
